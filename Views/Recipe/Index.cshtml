@@ -1,0 +1,28 @@
+﻿@model IEnumerable<JoyceOfCooking.Models.Recipe>
+    
+    
+    @foreach(var item in Model)
+    {
+       <h1 class="Display-5"> @item.RecipeName</h1>
+        <h5>Ingredients</h5> 
+        <ul>
+        @foreach (var ingred in item.IngredientList.Ingredients)
+        {
+           <li>@ingred.IngredientText</li>
+
+           
+        }
+
+        
+    </ul>
+    <h5>Instructions</h5>
+    <ul>
+    @foreach (var instruct in item.InstructionList.Instructions)
+        {
+           <li>@instruct.InstructionText</li>
+
+           
+        }
+         </ul>
+
+    }

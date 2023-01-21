@@ -1,0 +1,16 @@
+﻿@model IEnumerable<JoyceOfCooking.ViewModels.AlphaAndList>
+    
+    
+    @foreach(var item in Model)
+    {
+       <hr />
+       <h1>@item.AlphaLetter</h1>
+       <br />
+
+       @foreach (var reci in item.Recipes)
+       {
+           @Html.ActionLink(@reci.RecipeName,"Recipe", new{ id = reci.RecipeId})
+       }
+        }
+       
+    }
