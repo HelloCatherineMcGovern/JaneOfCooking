@@ -1,4 +1,4 @@
-# JoyceOfCooking
+# JaneOfCooking
 
 This is a personal exercise to practice  ASP.NET with the MVC Pattern.
 
